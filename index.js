@@ -6,7 +6,7 @@ res.status(200);
 res.json({'pong': true});
 });
 
-const port = 5001;
+const port = process.env.PORT || 5001;
 app.listen(port, () => {
 console.log(`listening to port ${port}`);
 })
